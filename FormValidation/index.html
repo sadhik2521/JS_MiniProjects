@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 class="form-header" id="heading">Registration Form</h1>
+    <div id="form-application">
+        <form action="success.html" class="form" id="create-acc-form ">
+            <div class="fn-container ">
+                <label class="d-flex font-small">
+                    First name
+                    <input type="text" name="" class="firstNameField" id="input-feild-design"
+                        placeholder="Enter Your first name" required>
+                </label>
+                <span class="fn-err err-line">Name must only contain alphabets</span>
+            </div>
+            <div class="ln-container">
+                <label class="d-flex font-small">Last name
+                    <input type="text" name="" class="lastNameValue" id="input-feild-design"
+                        placeholder="Enter Your last name" required>
+                </label>
+                <span class="ln-err err-line">Name must only contain alphabets</span>
+            </div>
+            <div class="email-container">
+                <label class="d-flex font-small">Email
+                    <input type="email" name="" class="emailValue" id="input-feild-design"
+                        placeholder="Enter Your Email" required>
+                </label>
+                <span class="email-err err-line">Invalid Email</span>
+            </div>
+            <div class="pass-container">
+                <label class="d-flex font-small">password
+                    <input type="password" name="" class="passValue" id="input-feild-design"
+                        placeholder="Enter password" required>
+                </label>
+                <span class="pass-err err-line">Invalid Password</span>
+            </div>
+            <div class="create-acc" id="sub-details">
+                <button type="submit" class="submit-btn" id="subBtn">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

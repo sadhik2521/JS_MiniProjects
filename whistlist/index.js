@@ -4,18 +4,18 @@ let showTodo = document.querySelector(".show-todo")
 let delBtn = document.querySelector(".del-btn")
 let todo;
 
-// let localData = JSON.parse(localStorage.getItem("todo"));
+// // let localData = JSON.parse(localStorage.getItem("todo"));
 let todoList = [];
 
 
-//program to remove comma
+// //program to remove comma
 function removeCommasFromDocument() {
     showTodo.innerHTML = showTodo.innerHTML.replace(/,/g, '');
     // document.body.innerHTML = document.body.innerHTML.replace(/,/g, '');
 }
 removeCommasFromDocument()
 
-// //program to create unique adress
+// // //program to create unique adress
 function todoId() {
     return 'item-xxx3x-sadhik-yxxx4-xxxx-xxxx'.replace(/[xy]/g, function (param) {
         let number = Math.random() * 15 | 0;
@@ -65,6 +65,4 @@ let showTodoElement = (todoList) => {
     removeCommasFromDocument()
 
 }
-
-
 
