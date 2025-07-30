@@ -15,10 +15,10 @@
             <div class="fn-container ">
                 <label class="d-flex font-small">
                     First name
-                    <input type="text" name="" class="firstNameField" id="input-feild-design"
+                    <input type="text" name="" data-key="firstNameField" class="firstNameField" id="input-feild-design"
                         placeholder="Enter Your first name" required>
                 </label>
-                <span class="fn-err err-line">Name must only contain alphabets</span>
+                <span data-error="fn-err" class="fn-err err-line">Name must only contain alphabets</span>
             </div>
             <div class="ln-container">
                 <label class="d-flex font-small">Last name
@@ -42,7 +42,8 @@
                 <span class="pass-err err-line">Invalid Password</span>
             </div>
             <div class="create-acc" id="sub-details">
-                <button type="submit" class="submit-btn" id="subBtn">Create Account</button>
+                <button type="submit" class="submit-btn" id="subBtn">Register</button>
+                <a href="success.html"><button></button></a>
             </div>
         </form>
     </div>
